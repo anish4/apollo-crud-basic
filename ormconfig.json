@@ -1,0 +1,10 @@
+{
+	"type": "mongodb",
+	"url": "mongodb+srv://<account>:<password>@<cluster>/<db>?retryWrites=true&w=majority",
+	"useNewUrlParser": true,
+	"useUnifiedTopology": true,
+	"synchronize": true,
+	"logging": true,
+	"entities": ["src/entity/*.*"],
+	"ssl": true
+}
