@@ -63,7 +63,7 @@ export class PostResolver {
 	}
 
 	@Query(() => Post, { nullable: true })
-	async post(@Arg('id') id: string): Promise<Post | undefined> {
+	async post(@Arg('id') id: string): Promise<Post | undefined | null> {
 		return await Post.findOne(id);
 	}
 }
