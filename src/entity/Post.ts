@@ -19,6 +19,6 @@ export class Post extends BaseEntity {
 	body: string;
 
 	@Field({ nullable: true })
-	@Column()
+	@Column({nullable:true})
 	image?: string;
 }
