@@ -21,13 +21,4 @@ export class Post extends BaseEntity {
 	@Field({ nullable: true })
 	@Column()
 	image?: string;
-
-	//not working in atlas--fix this--
-	// @Field()
-	// @CreateDateColumn('timestamp')
-	// createdAt: Date;
-
-	// @Field({ nullable: true })
-	// @UpdateDateColumn({ type: 'timestamp', nullable: true })
-	// updatedAt?: Date;
 }
